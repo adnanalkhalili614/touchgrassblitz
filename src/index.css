@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neo-bg:           #0A0908;
+  --color-neo-bg2:          #141210;
+  --color-neo-card:         #1C1916;
+  --color-neo-accent:       #C8956C;
+  --color-neo-accent-soft:  #E8C4A0;
+  --color-neo-text:         #F2EDE8;
+  --color-neo-text2:        #8A7F78;
+  --color-neo-muted:        #4A4540;
+  --color-neo-success:      #7CB99A;
+  --color-neo-warning:      #C97070;
+
+  --font-family-sans: "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #0A0908;
+  color: #F2EDE8;
+  font-family: var(--font-family-sans);
+  overflow: hidden;
+}
+
+.neo-scroll {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.neo-scroll::-webkit-scrollbar { display: none; }
+
+textarea, input { outline: none; background: transparent; }
+button { cursor: pointer; }
